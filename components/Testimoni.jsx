@@ -13,7 +13,7 @@ const Testimoni = ({ listTestimoni }) => {
     customPaging: function (i) {
       return (
         <a className="">
-          <span className="rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all"></span>
+          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
         </a>
       );
     },

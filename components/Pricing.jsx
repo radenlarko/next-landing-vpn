@@ -3,6 +3,7 @@ import Image from "next/image";
 import ButtonPrimary from "./misc/ButtonPrimary";
 import ButtonOutline from "./misc/ButtonOutline";
 import Maps from "../public/assets/HugeGlobal.svg";
+import Testimoni from "./Testimoni";
 
 const data = [
   {
@@ -66,6 +67,45 @@ const partner = [
   },
 ];
 
+const listTestimoni = [
+    {
+      name: "iezh Robert",
+      image: "/assets/people-3.png",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "iezh Robert",
+      image: "/assets/people-3.png",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "iezh Robert",
+      image: "/assets/people-3.png",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+    {
+      name: "iezh Robert",
+      image: "/assets/people-3.png",
+      city: "Warsaw",
+      country: "Poland",
+      rating: "4.5",
+      testimoni:
+        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+    },
+  ]
+
 const Price = ({ title, list, price, unit }) => (
   <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
     <div className="p-4 lg:p-0 mt-6 lg:mt-16">
@@ -101,7 +141,7 @@ const TitleSection = ({ title, description }) => (
     <h3 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed w-9/12 sm:w-6/12 lg:w-4/12 mx-auto">
       {title}{" "}
     </h3>
-    <p className="leading-normal  mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
+    <p className="leading-normal mx-auto my-2 w-10/12 sm:w-7/12 lg:w-6/12">
       {description}
     </p>
   </>
@@ -162,7 +202,7 @@ const Pricing = () => {
             pleasure when using this crazy feature."
           />
           <div className="w-full flex flex-col py-12">
-            {/* <Testimoni /> */}
+            <Testimoni listTestimoni={listTestimoni} />
           </div>
           <div className="relative w-full mt-16">
             <div className="absolute rounded-xl py-8 sm:py-14 px-6 sm:px-12 lg:px-16 w-full flex flex-col sm:flex-row justify-between items-center z-10 bg-white-500">

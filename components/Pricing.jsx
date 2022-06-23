@@ -68,43 +68,43 @@ const partner = [
 ];
 
 const listTestimoni = [
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-    {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
-      testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
-    },
-  ]
+  {
+    name: "iezh Robert",
+    image: "/assets/people-3.png",
+    city: "Warsaw",
+    country: "Poland",
+    rating: "4.5",
+    testimoni:
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+  },
+  {
+    name: "iezh Robert",
+    image: "/assets/people-3.png",
+    city: "Warsaw",
+    country: "Poland",
+    rating: "4.5",
+    testimoni:
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+  },
+  {
+    name: "iezh Robert",
+    image: "/assets/people-3.png",
+    city: "Warsaw",
+    country: "Poland",
+    rating: "4.5",
+    testimoni:
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+  },
+  {
+    name: "iezh Robert",
+    image: "/assets/people-3.png",
+    city: "Warsaw",
+    country: "Poland",
+    rating: "4.5",
+    testimoni:
+      "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+  },
+];
 
 const Price = ({ title, list, price, unit }) => (
   <div className="flex flex-col justify-center items-center border-2 border-gray-500 rounded-xl py-4 px-6 lg:px-12 xl:px-20">
@@ -185,11 +185,14 @@ const Pricing = () => {
           <div className="w-full flex justify-evenly items-center mt-4 flex-wrap lg:flex-nowrap">
             {/* <Netflix className="h-18 w-auto" /> */}
             {partner.map((item) => (
-              <img
+              <Image
                 key={item.name}
                 src={item.src}
-                className="h-14 w-auto mt-4 lg:mt-2"
-                alt=""
+                width={165}
+                height={56}
+                objectFit="contain"
+                className="mt-4 lg:mt-2"
+                alt="logo-partner"
               />
             ))}
           </div>
@@ -210,7 +213,7 @@ const Pricing = () => {
                 <h5 className="text-black-600 text-xl sm:text-2xl lg:text-3xl leading-relaxed font-medium">
                   Subscribe Now for <br /> Get Special Features!
                 </h5>
-                <p>Let's subscribe with us and find the fun.</p>
+                <p>Let&apos;s subscribe with us and find the fun.</p>
               </div>
               <ButtonPrimary>Get Started</ButtonPrimary>
             </div>

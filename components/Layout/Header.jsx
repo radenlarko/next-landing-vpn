@@ -1,22 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline";
 import LogoVPN from "../../public/assets/Logo.svg";
-
-const MyNav = ({ to, onSetActive, extendClass, children }) => (
-  <LinkScroll
-    activeClass="active"
-    to={to}
-    spy={true}
-    smooth={true}
-    duration={1000}
-    onSetActive={onSetActive}
-    className={`px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative ${extendClass}`}
-  >
-    {children}
-  </LinkScroll>
-);
+import { AboutIcon, FeatureIcon, PricingIcon, TestimonialIcon } from "../icons";
+import { MyNav, MyNavMobile } from "../navigation";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -30,7 +17,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 w-full  z-30 bg-white-500 transition-all ${
-        activeLink ? " shadow-md pt-0" : " pt-4"
+        scrollActive ? " shadow-md pt-0" : " pt-4"
       }`}
     >
       <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
@@ -90,6 +77,62 @@ const Header = () => {
             </a>
           </Link>
           <ButtonOutline>Sign Up</ButtonOutline>
+        </div>
+      </nav>
+
+      {/* Mobile Navigation */}
+      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 px-4 sm:px-8 shadow-t">
+        <div className="bg-white-500 sm:px-3">
+          <ul className="flex w-full justify-between items-center text-black-500">
+            <MyNavMobile
+              to="about"
+              onSetActive={() => setActiveLink("about")}
+              extendClass={
+                activeLink === "about"
+                  ? "border-orange-500 text-orange-500"
+                  : "border-transparent"
+              }
+            >
+              <AboutIcon />
+              About
+            </MyNavMobile>
+            <MyNavMobile
+              to="feature"
+              onSetActive={() => setActiveLink("feature")}
+              extendClass={
+                activeLink === "feature"
+                  ? "border-orange-500 text-orange-500"
+                  : "border-transparent"
+              }
+            >
+              <FeatureIcon />
+              Feature
+            </MyNavMobile>
+            <MyNavMobile
+              to="pricing"
+              onSetActive={() => setActiveLink("pricing")}
+              extendClass={
+                activeLink === "pricing"
+                  ? "border-orange-500 text-orange-500"
+                  : "border-transparent"
+              }
+            >
+              <PricingIcon />
+              Pricing
+            </MyNavMobile>
+            <MyNavMobile
+              to="testimoni"
+              onSetActive={() => setActiveLink("testimoni")}
+              extendClass={
+                activeLink === "testimoni"
+                  ? "border-orange-500 text-orange-500"
+                  : "border-transparent"
+              }
+            >
+              <TestimonialIcon />
+              Testimonial
+            </MyNavMobile>
+          </ul>
         </div>
       </nav>
     </header>

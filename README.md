@@ -1,34 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tailwind VPN Landingpage Rebuild
+
+Tailwind VPN Landingpage is an open source, apps landing page template for [Tailwind CSS](https://tailwindcss.com/) and[ NextJS](nextjs.org/).
 
 ## Getting Started
 
-First, run the development server:
+Choose one of the following options to get started:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Clone the repo: `git clone https://github.com/radenlarko/next-landing-vpn.git`
+- Fork the repo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About the Template
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Template building using NextJS Version 12.1.6
+- Tailwind v3.1.4
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Feature Template
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Using [NextJS Image](https://nextjs.org/docs/api-reference/next/image) for Image Optimization
+- Slider using [React Slick](https://react-slick.neostack.com/docs/api)
+- Smooth Scrolling and Active menu using [React Scroll](https://www.npmjs.com/package/react-scroll)
 
-## Learn More
+## Source
 
-To learn more about Next.js, take a look at the following resources:
+Thanks to **[Naufaldi](https://github.com/naufaldi/)**, and [Didi Kurniawan](https://twitter.com/didiikurniawann) for the source code and application design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Copyright and License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Code released under the MIT license.
